@@ -1,18 +1,35 @@
+<?php
+// Dados Dinâmicos da Empresa
+$empresa = [
+    "razao_social" => "Galeteria da Lapa LTDA",
+    "nome_fantasia" => "Galeteria Lapa",
+    "cnpj" => "64.763.334/0001-08",
+    "data_abertura" => "23/01/2026",
+    "porte" => "Empresa de Pequeno Porte (EPP)",
+    "natureza_juridica" => "Sociedade Empresária Limitada",
+    "simples_nacional" => "Sim (Desde 28/01/2026)",
+    "mei" => "Não",
+    "capital_social" => "R$ 30.000,00",
+    "tipo" => "Matriz",
+    "situacao" => "Ativa",
+    "email" => "contato@galeterialapa.com.br", // Exemplo - ajuste se necessário
+    "telefone" => "(11) 99999-9999",             // Exemplo - ajuste se necessário
+    "endereco" => [
+        "logradouro" => "Rua da Lapa, 100",
+        "bairro" => "Lapa",
+        "municipio" => "São Paulo",
+        "uf" => "SP",
+        "cep" => "05076-000"
+    ]
+];
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php echo $empresa['nome_fantasia']; ?> | O Melhor Galeto Tradicional</title>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18461655260"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'AW-18461655260');
-</script>
   <!-- Swiper CSS para o Slider -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- Font Awesome para Ícones -->
